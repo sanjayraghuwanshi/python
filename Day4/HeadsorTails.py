@@ -19,4 +19,6 @@ if random_side == 1:
     print("Heads")
 else:
     print("Tails")
+
+#print("Heads" if random.randint(0, 1) == 1 else "Tails")
 """
