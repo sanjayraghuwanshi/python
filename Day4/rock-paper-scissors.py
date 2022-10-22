@@ -31,22 +31,24 @@ scissors = '''
 
 user = int(input('"What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."\n'))
 list = [rock, paper, scissors]
-print(list[user])
+if user >=3:
+    print("Please provide a valid value")
+else:
+    print(list[user])
 
-random_integer = random.randint(0, 2)
-#print(random_integer)
+    random_integer = random.randint(0, 2)
 
-print(f"computer chose:\n" + list[random_integer])
+    print(f"computer chose:\n" + list[random_integer])
 
-if user == random_integer:
-    print("Its a tie, play again")
-elif (user == 0 and random_integer == 1) or (user == 0 and random_integer == 2):
-    print("You won")
-elif user == 1 and random_integer == 0:
-    print("You won")
-elif (user == 1 and random_integer == 2):
-    print("You lose")
-elif user == 2 and random_integer == 0:
-    print("You lose")
-elif user == 2 and random_integer == 1:
-    print("You Won")
+    if user == random_integer:
+        print("Its a tie, play again")
+    elif (user == 0 and random_integer == 1) or (user == 0 and random_integer == 2):
+        print("You won")
+    elif user == 1 and random_integer == 0:
+        print("You won")
+    elif (user == 1 and random_integer == 2):
+        print("You lose")
+    elif user == 2 and random_integer == 0:
+        print("You lose")
+    elif user == 2 and random_integer == 1:
+        print("You Won")
