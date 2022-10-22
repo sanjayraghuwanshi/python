@@ -10,3 +10,5 @@ print("You are" + age + " years old")
 """
 
 #For ASCII banners - ASCII.co.uk/art
+
+#For searching python related stuff - askpython.com
