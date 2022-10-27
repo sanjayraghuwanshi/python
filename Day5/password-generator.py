@@ -9,17 +9,23 @@ nr_letters= int(input("How many letters would you like in your password?\n"))
 nr_symbols = int(input(f"How many symbols would you like?\n"))
 nr_numbers = int(input(f"How many numbers would you like?\n"))
 
+#EASY ONE 
+#########
+"""
 #For letters
 p_letters = ""
 for i in range(0, nr_letters):
     randomLetter = random.choice(letters)
     p_letters = f'{p_letters}{randomLetter}'
-#print(p_letters)
+
+#Other way of doing above is 
+#for i in range(0, nr_letters):
+#    p_letters += random.choice(letters)
 
 #For numbers
 p_number = ""
 for i in range(0, nr_numbers):
-    random_integer = random.randint(0, 9)
+    random_integer = random.choice(numbers)
     p_number = f'{p_number}{random_integer}'
 #print(p_number)
 
@@ -34,16 +40,28 @@ for i in range(0, nr_symbols):
 #e.g. 4 letter, 2 symbol, 2 number = JduE&!91
 print(f"Here is your easy password: {p_letters}{p_symbol}{p_number}")
 
+"""
+
+#HARD_ONE
+
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
 
-n_pass = p_letters + p_symbol + p_number
+password_list = []
+for i in range(0, nr_letters):
+    password_list += random.choice(letters)     # OR password_list.append(random.choice(letters))
 
-l = list(n_pass)
-len = len(n_pass)
-print(l)
+for i in range(0, nr_numbers):
+    password_list += random.choice(numbers)
 
-p_random = random.shuffle(l)
-print(f"Here is your Hard password: {p_random}")
+for i in range(0, nr_symbols):
+    password_list += random.choice(symbols)
 
-#res = p_number + p_symbol + p_letters
+#print(password_list)
+new_p = random.shuffle(password_list)
+
+password = ""
+for char in password_list:
+    password += char
+
+print(f"Here is your hard password: {new_p}")
