@@ -8,6 +8,7 @@ def wall_in_front(): ()
 
 #Code starts from here.
 #This code leaves a edge case and needs a revisit on Day15 
+#https://www.udemy.com/course/100-days-of-code/learn/lecture/19115662#overview
 
 def turn_right():
     turn_left()
