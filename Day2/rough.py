@@ -14,6 +14,9 @@ print("You are" + age + " years old")
 #For searching python related stuff - askpython.com
 
 """
+git config --global user.email "raghu1c.sanjay@gmail.com"
+git config --global user.name "Sanjay Raghuwanshi"
+
  git add *
  git commit -am "Day4"
  git push -u origin master
