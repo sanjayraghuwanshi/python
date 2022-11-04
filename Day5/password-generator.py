@@ -58,10 +58,10 @@ for i in range(0, nr_symbols):
     password_list += random.choice(symbols)
 
 #print(password_list)
-new_p = random.shuffle(password_list)
+random.shuffle(password_list)
 
 password = ""
 for char in password_list:
     password += char
 
-print(f"Here is your hard password: {new_p}")
+print(f"Here is your hard password: {password}")
