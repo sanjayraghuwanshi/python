@@ -1,5 +1,4 @@
-# python
-This repository is collection of projects prepared during my python journey.
+### _This repository is collection of projects prepared during my python journey._
 
 #### Beginner
 
