@@ -1,0 +1,5 @@
+print(f"Sanjay Raghuwanshi")
+print('*' * 10)
+print('    0----')
+print('     ||||')
+print('*' * 10)
