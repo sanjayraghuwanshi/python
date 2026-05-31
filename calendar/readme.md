@@ -1,4 +1,4 @@
-###Step 1: Enable Google Calendar API
+##Step 1: Enable Google Calendar API
 * Go to Google Cloud Console
 * Create a project.
 * Enable the Google Calendar API.
