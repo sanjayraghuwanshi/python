@@ -1,0 +1,10 @@
+Write a program that creates a file notes.txt and writes 5 lines of any text to it.
+        Read the file back and print each line with its line number.
+        Append 3 more lines to the same file without overwriting.
+        Count the total number of lines and words in the file.
+        Search the file for a word (user input) and print all lines containing it.
+        Concepts: open(), write(), read(), readlines(), with statement, modes r/w/a
+Appending line 1
+Appending line 2
+Appending line 3
+Appending line 4

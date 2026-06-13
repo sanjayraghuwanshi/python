@@ -15,53 +15,31 @@ Shuffle questions each time using random.shuffle().
 """
 
 space_trivia = [
-    {
-        "question": "Which planet in our solar system has the most moons?",
-        "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-        "answer": "Saturn"
-    },
-    {
-        "question": "What is the hottest planet in our solar system?",
-        "options": ["Mercury", "Venus", "Mars", "Jupiter"],
-        "answer": "Venus"
-    },
-    {
-        "question": "Roughly how long does it take for light from the Sun to reach Earth?",
-        "options": ["8 seconds", "8 minutes", "8 hours", "8 days"],
-        "answer": "8 minutes"
-    },
-    {
-        "question": "Which galaxy is the closest major galaxy to the Milky Way?",
-        "options": ["Andromeda", "Triangulum", "Sombrero", "Whirlpool"],
-        "answer": "Andromeda"
-    },
-    {
-        "question": "What is the name of the first artificial Earth satellite launched into space?",
-        "options": ["Apollo 11", "Voyager 1", "Sputnik 1", "Hubble"],
-        "answer": "Sputnik 1"
-    },
-    {
-        "question": "Who was the first human to journey into outer space?",
-        "options": ["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "John Glenn"],
-        "answer": "Yuri Gagarin"
-    },
-    {
-        "question": "Which element makes up the vast majority of the Sun's mass?",
-        "options": ["Oxygen", "Helium", "Hydrogen", "Carbon"],
-        "answer": "Hydrogen"
-    },
-    {
-        "question": "What is the name of the rover that landed on Mars in February 2021?",
-        "options": ["Curiosity", "Perseverance", "Opportunity", "Spirit"],
-        "answer": "Perseverance"
-    }
+    dict(question="Which planet in our solar system has the most moons?",
+         options=["Jupiter", "Saturn", "Uranus", "Neptune"], answer="Saturn"),
+    dict(question="What is the hottest planet in our solar system?",
+         options=["Mercury", "Venus", "Mars", "Jupiter"], answer="Venus"),
+    dict(question="Roughly how long does it take for light from the Sun to reach Earth?",
+         options=["8 seconds", "8 minutes", "8 hours", "8 days"], answer="8 minutes"),
+    dict(question="Which galaxy is the closest major galaxy to the Milky Way?",
+         options=["Andromeda", "Triangulum", "Sombrero", "Whirlpool"], answer="Andromeda"),
+    dict(question="What is the name of the first artificial Earth satellite launched into space?",
+         options=["Apollo 11", "Voyager 1", "Sputnik 1", "Hubble"], answer="Sputnik 1"),
+    dict(question="Who was the first human to journey into outer space?",
+         options=["Neil Armstrong", "Yuri Gagarin", "Buzz Aldrin", "John Glenn"], answer="Yuri Gagarin"),
+    dict(question="Which element makes up the vast majority of the Sun's mass?",
+         options=["Oxygen", "Helium", "Hydrogen", "Carbon"], answer="Hydrogen"),
+    dict(question="What is the name of the rover that landed on Mars in February 2021?",
+         options=["Curiosity", "Perseverance", "Opportunity", "Spirit"], answer="Perseverance")
 ]
+
 
 def display_question(q):
     """Shows the question and a numbered list of options."""
     print(f"\nQues. {q['question']}")
     for i, option in enumerate(q['options'], 1):
         print(f"  {i}. {option}")
+
 
 def check_answer(user_ans, correct_ans):
     return str(user_ans).strip().lower() == str(correct_ans).strip().lower()
